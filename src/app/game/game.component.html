@@ -1,0 +1,16 @@
+<div class="w-100 screen-height" fxLayout="column">
+  <div fxFlex="1 1 49%"></div>
+  <div class="border border-success drag-boundry" fxFlex="1 1 2%"></div>
+  <div
+    class="drag-boundry"
+    fxFlex="1 1 49%"
+    fxLayout="row"
+    fxLayoutAlign="center end"
+  >
+    <app-card
+      *ngFor="let card of cards"
+      cdkDragBoundary=".drag-boundry"
+      cdkDrag
+    ></app-card>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+.screen-height {
+  height: 100vh !important;
+}
+
+.zoom {
+  transition: transform 0.2s;
+  /* Animation */
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.zoom:hover {
+  z-index: 2;
+  transform: scale(1.5) translate(0px, -20px);
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
